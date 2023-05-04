@@ -11,9 +11,9 @@ export const ContactForm = ({onSubmit}) => {
   const  handleChange = event => {
         const {name, value} = event.target;
         switch (name) {
-          case 'name': setName (value);
+          case 'name': setName(value);
           break;
-          case 'number': setNumber (value);
+          case 'number': setNumber(value);
           break;
           default:
           break;
@@ -23,7 +23,7 @@ export const ContactForm = ({onSubmit}) => {
 
 const   handleSubmit = event => {
         event.preventDefault();
-        onSubmit(name,number);
+        onSubmit(name, number);
         setName('');
         setNumber('');
     };
